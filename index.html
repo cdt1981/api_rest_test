@@ -6,7 +6,7 @@
     <title>Document</title>
     <script>
         function agregarDatos(){
-            fetch("https://script.google.com/macros/s/AKfycbwFuOWTwH5e0jcfBj_5I8Z1LmBiSrjtI2byhxtRJ8pRXNY-ZWKzeb0ttZSVoaDhpEwz/exec?action=agregarDatos",
+            async await fetch("https://script.google.com/macros/s/AKfycbwFuOWTwH5e0jcfBj_5I8Z1LmBiSrjtI2byhxtRJ8pRXNY-ZWKzeb0ttZSVoaDhpEwz/exec?action=agregarDatos",
             {method: "POST",
             body:{
                 "agente": "Carlos",
@@ -16,11 +16,9 @@
              //referrerPolicy: 'no-referrer',
              headers: {
                  'Content-Type': 'application/json',
-                 
-             
-             }
-             
-            })
+                 }
+             })
+                    .then(console.log("success"))
 
         }
 
