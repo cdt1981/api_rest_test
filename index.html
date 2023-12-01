@@ -19,18 +19,12 @@
         }
 
         function obtenerDatos(){
-            fetch("https://script.google.com/macros/s/AKfycbzmeA3w5P9vXQQHxp2pP5pJ_FRPEQgs3NzSqZaopXshjUuHqsMpA0IpUGCvYENFbM3N/exec?action=obtenerDatos",
-            {method: "GET",
-             mode: 'no-cors'
-             //headers: {
-             //   'Accept': 'application/json',
-             //}
-            })
-                .then((response) => response.json())
-                .then((data) => console.log(data))
-                   
 
-        }
+              const response = await fetch("https://script.google.com/macros/s/AKfycbzmeA3w5P9vXQQHxp2pP5pJ_FRPEQgs3NzSqZaopXshjUuHqsMpA0IpUGCvYENFbM3N/exec?action=obtenerDatos",
+                    {method: "GET", mode: 'no-cors'});
+              const data = await response.json();
+              console.log(data); 
+          }
 
 
     </script>
