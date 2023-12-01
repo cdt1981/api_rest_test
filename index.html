@@ -8,7 +8,7 @@
         function agregarDatos(){
             fetch("https://script.google.com/macros/s/AKfycbwFuOWTwH5e0jcfBj_5I8Z1LmBiSrjtI2byhxtRJ8pRXNY-ZWKzeb0ttZSVoaDhpEwz/exec?action=agregarDatos",
             {method: "POST",
-            body: JSON.parse({
+            body: JSON.stringify({
                 "agente": "Carlos",
                 "numero": 12345,
                 }),
