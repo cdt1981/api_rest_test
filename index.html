@@ -19,7 +19,7 @@
         }
 
         function obtenerDatos(){
-            fetch("https://script.google.com/macros/s/AKfycbwFuOWTwH5e0jcfBj_5I8Z1LmBiSrjtI2byhxtRJ8pRXNY-ZWKzeb0ttZSVoaDhpEwz/exec",
+            fetch("https://script.google.com/macros/s/AKfycbxBLcWoPiHlmS7sZ7NsB8M-MM43vW9cqxnBw-K9bSdx5wfpRDq8MMkuuzWpZvHDlxcJ/exec?action=obtenerDatos",
             {method: "GET"})
                 .then((response) => JSON.stringify(response))
                 .then((data) => console.log(data))
