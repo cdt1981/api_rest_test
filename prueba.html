@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function agregarDatos(){
+            fetch("https://script.google.com/macros/s/AKfycbwFuOWTwH5e0jcfBj_5I8Z1LmBiSrjtI2byhxtRJ8pRXNY-ZWKzeb0ttZSVoaDhpEwz/exec?action=agregarDatos",
+            {method: "POST",
+            body:{
+                "agente": "Carlos",
+                "numero": 12345
+                }
+            })
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <button onclick="agregarDatos()">CLICK ME</button>
+</body>
+</html>
