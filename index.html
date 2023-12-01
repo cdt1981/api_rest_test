@@ -18,10 +18,20 @@
 
         }
 
+        function obtenerDatos(){
+            fetch("https://script.google.com/macros/s/AKfycbwFuOWTwH5e0jcfBj_5I8Z1LmBiSrjtI2byhxtRJ8pRXNY-ZWKzeb0ttZSVoaDhpEwz/exec",
+            {method: "GET"})
+                .then((response) => JSON.parse(response))
+                .then((data) => console.log(data))
+                   
+
+        }
+
 
     </script>
 </head>
 <body>
     <button onclick="agregarDatos()">CLICK ME</button>
+    <button onclick="obtenerDatos()">OBTENER</button>
 </body>
 </html>
