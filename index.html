@@ -19,13 +19,13 @@
         }
 
         function obtenerDatos(){
-            fetch("https://script.google.com/macros/s/AKfycbxBLcWoPiHlmS7sZ7NsB8M-MM43vW9cqxnBw-K9bSdx5wfpRDq8MMkuuzWpZvHDlxcJ/exec?action=obtenerDatos",
+            fetch("https://docs.google.com/spreadsheets/d/1sLrTBqkzBUjhVX2IqPRj_iL_6dPKaDslRa1IqgmcpWU/edit#gid=0",
             {method: "GET",
              mode: 'no-cors'
             
             })
-                .then((response) => console.log(response))
-                //.then((data) => console.log(data))
+                .then((response) => JSON.stringify(response))
+                .then((data) => console.log(data))
                    
 
         }
