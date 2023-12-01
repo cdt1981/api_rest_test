@@ -24,7 +24,7 @@
              mode: 'no-cors'
             
             })
-                .then((response) => JSON.stringify(response))
+                .then((response) => JSON.parse(response))
                 .then((data) => console.log(data))
                    
 
